@@ -1,5 +1,5 @@
 {
-  "name": "Bookmarkify",
+  "name": "bookmarkifie",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bookmarkifie": "^1.0.0",
     "commander": "^7.2.0"
   }
 }

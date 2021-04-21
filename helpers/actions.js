@@ -47,8 +47,6 @@ async function save() {
 
     fs.writeFileSync(settingsPath, JSON.stringify(settings));
   }
-
-  console.log(settings);
 }
 
 // COMMAND: bm remove <projectName> (Remove the project Directory from the list of bookmark)
@@ -79,7 +77,7 @@ async function remove(projectName) {
 async function open(projectName) {
   fileData.projects.forEach(async (item) => {
     if (item.name == projectName) {
-      console.log("here");
+        console.log("Wait while your editor is opening...")
       await exec(`${settings.editor} ${item.path}`);
     }
   });
