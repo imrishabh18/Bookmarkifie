@@ -23,9 +23,9 @@ npm install bookmarkifie
 `bm` is an alias for the bookmarkifie CLI
 
 #### Add your project
-Go to the directory you want to bookmark and run this command.
+Go to the directory you want to bookmark and run this command. The default name would be the name of the directory or else you can give a name of your choice as well.
 ```shell
-bm add
+bm add [projectName]
 ```
 Now the name of the directory is saved in the list of bookmarks
 

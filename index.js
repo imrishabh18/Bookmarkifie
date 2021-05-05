@@ -5,7 +5,7 @@ const { save, open, remove } = require("./helpers/actions");
 program.version("1.0.0");
 
 program
-  .command("add")
+  .command("add [projectName]")
   .description("Give the path for the Project Directory")
   .alias("save")
   .action(save)

@@ -27,7 +27,7 @@ const settings = {
 };
 
 // COMMAND: bm add (while you are in the directory which will be bookmarked)
-async function save() {
+async function save(projectName) {
   let project = {};
   let repeated = false;
   let pathName = "~/" + process.cwd().split("/").slice(3).join("/");
@@ -39,7 +39,7 @@ async function save() {
 
   if (!repeated) {
     project = {
-      name: dirName,
+      name: projectName === undefined ? dirName : projectName,
       path: pathName,
     };
 
